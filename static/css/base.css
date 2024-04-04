@@ -93,3 +93,24 @@ body {
         padding-top: 164px;
     }
 }
+
+/* correct mobile padding to push content down below header */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh-116px);
+    }
+}
+
+@media (max-width: 429px) {
+    .header-container {
+        padding-top: 145px;
+    }
+
+    body {
+        height: calc(100vh-145px);
+    }
+}
